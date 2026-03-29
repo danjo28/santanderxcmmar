@@ -76,7 +76,15 @@ const Index = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            Carrera de ciclismo de montaña y XCO por etapas en el departamento de Santander
+            15 — 20 de Agosto, 2026 · Santander, Colombia
+          </motion.p>
+          <motion.p
+            className="mt-2 text-base md:text-lg text-foreground/60 font-body max-w-2xl mx-auto"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+          >
+            Carrera de ciclismo de montaña y XCO por etapas
           </motion.p>
           <motion.div className="mt-8" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
             <CountdownTimer />
