@@ -29,7 +29,7 @@ const CountdownTimer = () => {
   ];
 
   return (
-    <div className="flex gap-4 md:gap-8">
+    <div className="gap-4 md:gap-8 flex-row flex items-center justify-center text-left font-light font-mono text-2xl mx-[5px]">
       {units.map((u) => (
         <div key={u.label} className="text-center">
           <div className="font-heading text-4xl md:text-6xl text-foreground">{String(u.value).padStart(2, "0")}</div>
