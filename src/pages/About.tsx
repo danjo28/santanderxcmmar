@@ -1,5 +1,6 @@
 import ScrollReveal from "@/components/ScrollReveal";
 import aboutBg from "@/assets/about-bg.jpg";
+import joseDaniel from "@/assets/jose-daniel.jpg";
 
 const About = () => (
   <div className="min-h-screen pt-16">
@@ -27,14 +28,17 @@ const About = () => (
 
         <ScrollReveal delay={0.2}>
           <h2 className="font-heading text-3xl md:text-5xl text-foreground mt-12 mb-6">EL ORGANIZADOR</h2>
-          <div className="bg-card rounded-lg p-8 border border-border">
-            <h3 className="font-heading text-2xl text-primary">Jose Daniel Pulecio Martinez</h3>
-            <p className="text-muted-foreground mt-3 leading-relaxed">
-              Apasionado por el ciclismo de montaña y el deporte al aire libre, Jose Daniel es el fundador y 
-              director de Colombia Marathon Race. Con años de experiencia en la organización de eventos deportivos 
-              en Colombia, su visión es crear una carrera que desafíe los límites de los competidores mientras 
-              celebra la riqueza natural de Santander.
-            </p>
+          <div className="bg-card rounded-lg p-8 border border-border flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+            <img src={joseDaniel} alt="Jose Daniel Pulecio Martinez" className="w-32 h-32 rounded-full object-cover border-4 border-primary shrink-0" loading="lazy" width={512} height={512} />
+            <div>
+              <h3 className="font-heading text-2xl text-primary">Jose Daniel Pulecio Martinez</h3>
+              <p className="text-muted-foreground mt-3 leading-relaxed">
+                Apasionado por el ciclismo de montaña y el deporte al aire libre, Jose Daniel es el fundador y 
+                director de Colombia Marathon Race. Con años de experiencia en la organización de eventos deportivos 
+                en Colombia, su visión es crear una carrera que desafíe los límites de los competidores mientras 
+                celebra la riqueza natural de Santander.
+              </p>
+            </div>
           </div>
         </ScrollReveal>
 
