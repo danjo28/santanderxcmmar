@@ -71,7 +71,7 @@ const Index = () => {
             <span className="text-gradient">MARATHON RACE</span>
           </motion.h1>
           <motion.p
-            className="mt-4 text-lg md:text-xl text-foreground/80 font-body max-w-2xl mx-auto"
+            className="mt-4 text-2xl md:text-4xl text-foreground font-heading tracking-wider max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
