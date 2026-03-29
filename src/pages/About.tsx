@@ -1,5 +1,6 @@
 import ScrollReveal from "@/components/ScrollReveal";
 import aboutBg from "@/assets/about-bg.jpg";
+import joseDaniel from "@/assets/jose-daniel.jpg";
 
 const About = () => (
   <div className="min-h-screen pt-16">
