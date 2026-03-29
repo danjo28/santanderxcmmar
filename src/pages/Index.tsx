@@ -10,6 +10,11 @@ import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery7 from "@/assets/gallery-7.jpg";
 import gallery11 from "@/assets/gallery-11.jpg";
+import sponsorShimano from "@/assets/sponsor-shimano.png";
+import sponsorGopro from "@/assets/sponsor-gopro.png";
+import sponsorRedbull from "@/assets/sponsor-redbull.png";
+import sponsorSantander from "@/assets/sponsor-santander.png";
+import sponsorFox from "@/assets/sponsor-fox.png";
 
 const stats = [
   { icon: Mountain, label: "5 Etapas", desc: "Recorridos épicos" },
