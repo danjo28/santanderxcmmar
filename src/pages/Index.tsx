@@ -10,6 +10,11 @@ import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery7 from "@/assets/gallery-7.jpg";
 import gallery11 from "@/assets/gallery-11.jpg";
+import sponsorShimano from "@/assets/sponsor-shimano.png";
+import sponsorGopro from "@/assets/sponsor-gopro.png";
+import sponsorRedbull from "@/assets/sponsor-redbull.png";
+import sponsorSantander from "@/assets/sponsor-santander.png";
+import sponsorFox from "@/assets/sponsor-fox.png";
 
 const stats = [
   { icon: Mountain, label: "5 Etapas", desc: "Recorridos épicos" },
@@ -170,7 +175,37 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA with Parallax */}
+      {/* Patrocinadores */}
+      <section className="py-20">
+        <div className="container">
+          <ScrollReveal className="text-center mb-12">
+            <h2 className="section-title text-foreground">PATROCINADORES <span className="text-gradient">OFICIALES</span></h2>
+          </ScrollReveal>
+          <div className="grid grid-cols-3 md:grid-cols-5 gap-8 items-center justify-items-center">
+            {[
+              { src: sponsorShimano, alt: "Shimano" },
+              { src: sponsorGopro, alt: "GoPro" },
+              { src: sponsorRedbull, alt: "Red Bull" },
+              { src: sponsorSantander, alt: "Gobernación de Santander" },
+              { src: sponsorFox, alt: "Fox Racing" },
+            ].map((s, i) => (
+              <ScrollReveal key={s.alt} delay={i * 0.1}>
+                <motion.img
+                  src={s.src}
+                  alt={s.alt}
+                  className="h-16 md:h-20 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 invert"
+                  loading="lazy"
+                  width={512}
+                  height={512}
+                  whileHover={{ scale: 1.1 }}
+                />
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
       <ParallaxSection image={gallery7}>
         <div className="text-center">
           <ScrollReveal>
