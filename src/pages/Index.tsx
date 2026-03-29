@@ -76,7 +76,7 @@ const Index = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            15 — 20 de Agosto, 2026 · Santander, Colombia
+            15 — 20 de Agosto, 2026  // Santander, Colombia
           </motion.p>
           <motion.p
             className="mt-2 text-base md:text-lg text-foreground/60 font-body max-w-2xl mx-auto"
